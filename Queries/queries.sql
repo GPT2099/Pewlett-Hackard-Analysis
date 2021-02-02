@@ -133,8 +133,38 @@ ON (ce.emp_no = de.emp_no)
 INNER JOIN departments AS d
 ON (de.dept_no = d.dept_no);
 
-	
+SELECT ri.emp_no,
+    ri.first_name,
+    ri.last_name,
+	de.dept_no
+Into sales_team
+FROM retirement_info as ri
+LEFT JOIN dept_employees as de
+ON ri.emp_no = de.emp_no
+WHERE de.dept_no = ('d007');	
+
+Select * from sales_team;
+
+-- SKILL DRILL SALES TEAM 
+SELECT ri.emp_no, ri.first_name, ri.last_name, deps.dept_name
+INTO sales_team
+FROM retirement_info as ri
+LEFT JOIN dept_employees as de
+ON ri.emp_no = de.emp_no
+LEFT JOIN departments as deps
+ON de.dept_no = deps.dept_no
+WHERE de.dept_no = ('d007');
 		
+--SKILL DRILL sales/development team
+
+SELECT ri.emp_no, ri.first_name, ri.last_name, deps.dept_name
+INTO sales_development_team
+FROM retirement_info as ri
+LEFT JOIN dept_employees as de
+ON ri.emp_no = de.emp_no
+LEFT JOIN departments as deps
+ON de.dept_no = deps.dept_no
+WHERE de.dept_no IN ('d007', 'd005');
 
 
 
