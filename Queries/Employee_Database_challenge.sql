@@ -8,11 +8,14 @@ WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31')
 ORDER BY emp_no;
 
 -- Use Dictinct with Orderby to remove duplicate rows
-SELECT DISTINCT ON (______) _____,
-______,
-______,
-______
+SELECT DISTINCT ON (ri.emp_no) ri.emp_no, ri.first_name, ri.last_name, ri.title
+INTO unique_titles
+FROM retirment_titles as ri 
+ORDER BY ri.emp_no, ri.to_date DESC;
 
-INTO nameyourtable
-FROM _______
-ORDER BY _____, _____ DESC;
+--Sort and Group BY retiring titles
+SELECT COUNT(u.title), u.title
+INTO retiring_titles
+FROM unique_titles as u  
+GROUP BY u.title
+ORDER BY count DESC
