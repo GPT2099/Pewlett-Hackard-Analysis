@@ -20,7 +20,7 @@ FROM unique_titles as u
 GROUP BY u.title
 ORDER BY count DESC
 
---Mentorship Eligibility 
+--Mentorship Eligibility (Deliverable 2)
 SELECT DISTINCT ON (e.emp_no) e.emp_no, e.first_name, e.last_name, e.birth_date, de.from_date, de.to_date, ti.title
 INTO mentorship_eligibility 
 FROM employees as e
