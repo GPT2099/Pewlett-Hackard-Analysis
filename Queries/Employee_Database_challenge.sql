@@ -13,7 +13,7 @@ INTO unique_titles
 FROM retirment_titles as ri 
 ORDER BY ri.emp_no, ri.to_date DESC;
 
---Sort and Group BY retiring titles
+--Sort and Group BY retiring titles (Deliverable 1)
 SELECT COUNT(u.title), u.title
 INTO retiring_titles
 FROM unique_titles as u  
