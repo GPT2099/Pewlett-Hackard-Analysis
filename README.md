@@ -10,7 +10,7 @@ This analysis aims to help get ahead of the 'Silver-Tsunami" retirment wave by d
 - Only two managers are set to retire, but no current managers qualify for the mentorship program. 
 
 ## Summary 
-90,398 roles will need to be filled in total as the 'Silver tsunami' retirement wave hits the company. Senior staff make up 45% of the mentorship eligible employees which will aid in ushering in the new generation of Pewlett Hackard upper level staff. If the entire workforce was assigned a mentor, each mentor would have roughly 194 pupils. This number drops significantly when considering not every company employee will be considered for advancement. The following tables below showcase the mentorship eligibility by title and department:
+There will need to be 90,398 roles filled in total as the 'Silver tsunami' retirement wave hits the company. Senior staff make up 45% of the mentorship eligible employees which will aid in ushering in the new generation of Pewlett Hackard upper level staff. If the entire workforce was assigned a mentor, each mentor would have roughly 194 pupils. This number drops significantly when considering not every company employee will be considered for advancement. The following tables below showcase the mentorship eligibility by title and department:
 
    Mentorship Eligibility by Title
 <p align="center">
@@ -22,4 +22,6 @@ This analysis aims to help get ahead of the 'Silver-Tsunami" retirment wave by d
 </p>
 
  [View All Queries Here](./Queries/Employee_Database_challenge.sql) 
+ 
+ ## Conclusion
 
