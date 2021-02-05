@@ -30,7 +30,6 @@ INNER JOIN titles as ti
 ON e.emp_no = ti.emp_no
 WHERE (e.birth_date BETWEEN '1965-01-01' AND '1965-12-31') AND de.to_date = '9999-01-01'
 ORDER BY e.emp_no
-<<<<<<< HEAD
 
 --Creating a Mentorship Titles table (Deliverable 3)
 SELECT COUNT(m.title), m.title
@@ -40,12 +39,12 @@ GROUP BY m.title
 ORDER BY count DESC
 
 
---Mentorship by departments
+--Mentorship by departments (Deliverable 3)
 SELECT COUNT (de.dept_name), de.dept_name
 INTO mentorship_by_department
 FROM dept_employees as d, mentorship_eligibility as m, departments as de
 WHERE d.emp_no = m.emp_no and d.dept_no = de.dept_no
 GROUP BY de.dept_name
 ORDER BY count DESC
-=======
->>>>>>> 39fa52a8d6844fe42fa3880b5aba8da7c0566cde
+
+
