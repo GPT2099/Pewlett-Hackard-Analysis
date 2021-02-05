@@ -11,3 +11,7 @@ This analysis aims to help get ahead of the 'Silver-Tsunami" retirment wave by d
 
 ## Summary 
 
+<p align="center">
+  <img src="mentorship_eligible_by_title.png">
+</p>
+
